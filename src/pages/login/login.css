@@ -4,14 +4,14 @@
 }
 
 
-.apresentacao{
+.apresentacao {
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 7rem;
     margin-bottom: 2rem;
     margin-left: 14rem;
-    
+
 }
 
 .logo-img {
@@ -28,7 +28,18 @@
     line-height: 2.25rem;
 }
 
-p {
+.apresentacao h2 {
+    color: #5D4037;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem;
+
+}
+
+.apresentacao p {
     color: #3e2723b3;
     text-align: center;
     font-family: Montserrat;
@@ -47,4 +58,16 @@ p {
 .imagem-experiencia {
     margin-left: auto;
     max-width: auto;
+}
+
+
+/*ESTILIZAÇÃO E CONFIGURAÇÃO DO FORM DE LOGIN E CADASTRO*/
+
+.form-login {
+    height: 29.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+
 }
