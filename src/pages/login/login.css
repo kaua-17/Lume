@@ -1,5 +1,14 @@
 .login {
     display: flex;
+    flex-direction: column;
+    /* EMPILHA OS ELEMENTOS (Apresentação, Form e Imagem) */
+    align-items: center;
+    /* Centraliza tudo horizontalmente */
+    justify-content: center;
+    /* Centraliza no meio da altura da tela */
+    min-height: 100vh;
+    /* Ocupa a altura total da janela */
+    gap: 40px;
     font-family: "Noto Sans Georgian", sans-serif;
 }
 
@@ -10,7 +19,6 @@
     text-align: center;
     margin-top: 7rem;
     margin-bottom: 2rem;
-    margin-left: 14rem;
 
 }
 
@@ -57,17 +65,76 @@
 
 .imagem-experiencia {
     margin-left: auto;
-    max-width: auto;
+
 }
 
 
 /*ESTILIZAÇÃO E CONFIGURAÇÃO DO FORM DE LOGIN E CADASTRO*/
 
+/* Container que envolve o formulário */
 .form-login {
-    height: 29.25rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    align-self: stretch;
+    max-width: 400px;
+    /* Largura máxima igual ao do design */
+    margin: 0 auto;
+    /* Centraliza o bloco na tela */
+    padding: 0 20px;
+    /* Respiro lateral para telas pequenas */
+}
 
+/* Estilização do formulário em si */
+.form-login form {
+    display: flex;
+    flex-direction: column;
+    /* Coloca um elemento embaixo do outro */
+}
+
+/* As Labels (E-mail e Password) */
+.tag-login {
+    display: block;
+    font-size: 0.9rem;
+    color: #5b463d;
+    /* Aquele marrom escuro da marca */
+    font-weight: 600;
+    margin-bottom: 8px;
+    /* Espaço entre o texto e o campo de digitar */
+}
+
+/* Os Campos de Entrada (Inputs) */
+.input-login {
+    display: flex;
+    width: 28rem;
+    height: 3.125rem;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(93, 64, 55, 0.15);
+    background: #EFEBE9;
+}
+
+/* Efeito quando o usuário clica no input */
+.input-login:focus {
+    border-color: #5b463d;
+}
+
+/* O Botão de Entrar */
+.botao-login {
+    width: 100%;
+    background-color: #5b463d;
+    /* Marrom café */
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Espaço extra antes do botão */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de passar o mouse no botão */
+.botao-login:hover {
+    background-color: #44332a;
+    /* Um marrom um pouco mais escuro */
 }
