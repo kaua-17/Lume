@@ -11,28 +11,56 @@
 <body>
 
     <main>
-        <img class="imagem-experiencia" src="../../assets/images/container.svg" alt="">
-        <section class="login">
-            <div class="apresentacao">
-                <img class="logo-img" src="../../assets/images/icon.svg" alt="">
-                <span class="logo-nome">Lume</span>
-                <h2>Bem-vindo</h2>
-                <p>Entre para acessar sua conta e fazer pedidos</p>
-            </div>
 
-            <div class="form-login">
-                <form action="/login" method="post">
-                    <label class="tag-login" for="email">Email:</label>
-                    <input class="input-login" type="email" id="email" name="email" required><br><br>
-                    <label class="tag-login" for="password">Password:</label>
-                    <input class="input-login" type="password" id="password" name="password" required><br><br>
-                    <button class="botao-login" type="submit">Entrar</button>
+        <section class="login">
+            <div class="login-esquerda">
+                <div class="apresentacao">
+                    <img class="logo-img" src="../../assets/images/icon.svg" alt="">
+                    <span class="logo-nome">Lume</span>
+                    <h2>Bem-vindo</h2>
+                    <p>Entre para acessar sua conta e fazer pedidos</p>
+                </div>
+
+                <div class="form-login">
+                    <form action="/login" method="post">
+                        <div class="input-wrapper">
+                            <img class="icone" src="../../assets/images/email.svg" alt="email">
+                            <input class="input-login" type="email" id="email" name="email" placeholder="seu@email.com"
+                                required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <img class="icone" src="../../assets/images/cadeado.svg" alt="senha">
+                            <input class="input-login" type="password" id="password" name="password"
+                                placeholder="••••••••" required>
+                        </div>
+
+                        <button class="botao-login" type="submit">Entrar</button>
+
+                        <div class="divisor">
+                            <span>ou</span>
+                        </div>
+
+                        <button class="botao-google" type="button">
+                            <img src="../../assets/images/google-icon.svg" alt="Google">
+                            Continuar com Google
+                        </button>
+
+                    </form>
+
+                    <p class="cadastro-link">
+                        Não tem uma conta? <a href="/cadastro">Cadastre-se</a>
+                    </p>
+                </div>
                 </form>
             </div>
+            </div>
 
-
+            <div class="imagem-experiencia">
+                <img src="../../assets/images/container.svg" alt="">
+            </div>
         </section>
-        
+
     </main>
 
 
