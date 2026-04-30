@@ -4,7 +4,7 @@
     align-items: stretch;
     justify-content: space-between;
     min-height: 100vh;
-    font-family: 'Noto Sans Georgian';
+    
 }
 
 .login-esquerda {
@@ -38,6 +38,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 2.25rem;
+
 }
 
 .apresentacao h2 {
