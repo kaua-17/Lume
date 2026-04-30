@@ -1,0 +1,37 @@
+
+
+.btn {
+   
+    background-color: #5B463D; 
+    color: #FFFFFF;
+    
+    
+    padding: 12px 32px;
+    border: none;
+    border-radius: 12px;
+    
+    
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Efeito ao passar o mouse */
+.btn:hover {
+    background-color: #44332a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn:active {
+    transform: translateY(0);
+}
