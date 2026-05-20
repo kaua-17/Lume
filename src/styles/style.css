@@ -11,6 +11,7 @@
     justify-content: center;
     gap: 3rem;
     padding: 3rem 2rem;
+    background-color: #ede4dc;
 }
 
 #apresentacao {
@@ -37,7 +38,7 @@
     flex-shrink: 0;
 }
 
-.apresenta_inicio > .btn {
+.apresenta_inicio>.btn {
     justify-self: start;
     margin-top: 2rem;
 }
@@ -58,6 +59,73 @@
     border-radius: 20px;
 }
 
+#titulo_dif {
+    color: #5D4037;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-top: 65px;
+}
+
+.lista_diferenciais {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    width: min(100%, 72rem);
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+    list-style: none;
+}
+
+.lista_diferenciais li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 13rem;
+    max-width: 16rem;
+    text-align: center;
+}
+
+.lista_diferenciais img {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 2097150rem;
+    background: rgba(93, 64, 55, 0.10);
+}
+
+.lista_diferenciais .p_titulo {
+    color: #5D4037;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.lista_diferenciais .p_desc {
+    color: rgba(62, 39, 35, 0.70);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+
 @media (max-width: 900px) {
     .apresenta_inicio {
         grid-template-columns: 1fr;
@@ -72,5 +140,23 @@
     #img_brinde img {
         width: 100%;
         height: auto;
+    }
+
+    .lista_diferenciais {
+        flex-wrap: wrap;
+        gap: 2.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .lista_diferenciais {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.5rem;
+    }
+
+    .lista_diferenciais li {
+        width: 100%;
+        max-width: 20rem;
     }
 }
