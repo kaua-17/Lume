@@ -1,5 +1,15 @@
 @font-face {
   font-family: 'Noto Sans Georgian';
-  src: url('../assets/fonts/NotoSansGeorgian-VariableFont_wdth,wght.ttf') format('truetype');
-  font-weight: 400;
+  src: url('./NotoSansGeorgian-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
 }
