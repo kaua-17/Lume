@@ -58,19 +58,11 @@ header {
 
 
 .item-btn {
+
     position: absolute;
     right: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-.item-btn:hover {
-    transform: translateY(calc(-50% - 2px));
-}
-
-.item-btn:active {
-    transform: translateY(-50%);
-}
 
 .item {
     white-space: nowrap;
