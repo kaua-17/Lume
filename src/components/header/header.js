@@ -1,8 +1,14 @@
 const btnMobile = document.getElementById('btn-mobile');
+const menuOpcoes = document.getElementById('menu-opcoes');
+const navLogo = document.querySelector('nav.logo');
 
 function toggleMenu () {
-    const nav = document.getElementById('menu-opcoes');
-    nav.classList.toggle('active');
+    const isOpen = menuOpcoes.classList.toggle('active');
+
+    navLogo?.classList.toggle('menu-open', isOpen);
+    btnMobile.setAttribute('aria-expanded', isOpen);
 }
 
-btnMobile.addEventListener('click', toggleMenu)
+if (btnMobile && menuOpcoes) {
+    btnMobile.addEventListener('click', toggleMenu);
+}

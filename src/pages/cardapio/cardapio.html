@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../components/header/header.css">
   <link rel="stylesheet" href="cardapio.css">
 </head>
 <body>
@@ -36,7 +37,7 @@
       </button>
 
       <ul class="opcoes" id="menu-opcoes">
-        <li class="item"><a href="">Início</a></li>
+        <li class="item"><a href="../../../index.html">Início</a></li>
         <li class="item"><a href="../cardapio/cardapio.html" class="active">Cardápio</a></li>
         <li class="item"><a href="#">Nossa História</a></li>
         <li class="item"><a href="#">Contato</a></li>
@@ -155,15 +156,7 @@
     </div>
   </main>
 
-  <script>
-    const btnMobile = document.getElementById('btn-mobile');
-    const menuOpcoes = document.getElementById('menu-opcoes');
-
-    btnMobile.addEventListener('click', () => {
-      const isOpen = menuOpcoes.classList.toggle('open');
-      btnMobile.setAttribute('aria-expanded', isOpen);
-    });
-  </script>
+  <script src="../../components/header/header.js"></script>
 
 </body>
 </html>
