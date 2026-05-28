@@ -1,0 +1,134 @@
+header {
+    width: 100%;
+    padding: 1rem 2%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-left: 8rem;
+}
+
+.logoIcon {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+}
+
+.logoNome {
+    color: #5D4037;
+    text-align: center;
+    font-family: "Noto Sans Georgian";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25rem;
+    padding-left: 2rem;
+}
+
+.opcoes {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    gap: 1.97rem;
+    align-items: center;
+}
+
+.item a {
+    color: #5D4037;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0.02188rem;
+    text-decoration: none;
+}
+
+
+.item-btn {
+
+    position: absolute;
+    right: 4rem;
+}
+
+
+.item {
+    white-space: nowrap;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+@media (max-width: 490px) {
+
+    .logo {
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .menu-hamburger {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .opcoes {
+        display: block;
+        position: absolute;
+        width: 70%;
+        top: 70px;
+        left: auto;
+        right: 0;
+        background: #F8F5F2;
+        transition: 0.5s;
+        z-index: 1000;
+        height: calc(100vh - 70px);
+        border-bottom: 1px solid #5D4037;
+        transform: translateX(100%);
+    }
+
+    #menu-opcoes.active {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        border-bottom: 2px solid #5D4037;
+        transform: translateX(0);
+    }
+
+    .opcoes li {
+        padding: 1rem 0;
+        margin: 0 2rem;
+        border-bottom: 1px solid rgba(93, 64, 55, 0.1);
+    }
+
+    .opcoes li a {
+        font-size: 1.2rem;
+        display: block;
+    }
+
+
+
+    .item-btn {
+        display: none;
+    }
+
+
+}
